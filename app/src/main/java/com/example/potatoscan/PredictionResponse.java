@@ -28,4 +28,8 @@ public class PredictionResponse {
     public void setConfidence(String confidence) {
         _confidence = confidence;
     }
+
+    public String toString() {
+        return "Class: " + _className + ", Confidence: " + _confidence;
+    }
 }

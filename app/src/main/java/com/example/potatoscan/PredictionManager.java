@@ -1,5 +1,7 @@
 package com.example.potatoscan;
 
+import androidx.annotation.NonNull;
+
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -17,7 +19,7 @@ public class PredictionManager {
 
         call.enqueue(new Callback<PredictionResponse>() {
             @Override
-            public void onResponse(Call<PredictionResponse> call, Response<PredictionResponse> response) {
+            public void onResponse(@NonNull Call<PredictionResponse> call, @NonNull Response<PredictionResponse> response) {
                 if (response.isSuccessful()) {
                     callback.onSuccess(response.body());
                 } else {
@@ -26,7 +28,7 @@ public class PredictionManager {
             }
 
             @Override
-            public void onFailure(Call<PredictionResponse> call, Throwable t) {
+            public void onFailure(@NonNull Call<PredictionResponse> call, @NonNull Throwable t) {
                 callback.onFailure(t);
             }
         });
