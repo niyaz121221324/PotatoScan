@@ -1,7 +1,6 @@
 package com.example.potatoscan;
 
 import androidx.annotation.NonNull;
-
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.Callback;

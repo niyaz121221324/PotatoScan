@@ -3,15 +3,15 @@ package com.example.potatoscan;
 import androidx.annotation.NonNull;
 
 public class PredictionResponse {
-    private String className;
+    private String predictedClass;
     private Double confidence;
 
     public String getClassName() {
-        return className;
+        return predictedClass;
     }
 
     public void setClassName(String className) {
-        this.className = className;
+        this.predictedClass = className;
     }
 
     public Double getConfidence() {
@@ -24,6 +24,6 @@ public class PredictionResponse {
 
     @NonNull
     public String toString() {
-        return "Class: " + className + ", Confidence: " + confidence;
+        return "Class: " + predictedClass + ", Confidence: " + confidence;
     }
 }
