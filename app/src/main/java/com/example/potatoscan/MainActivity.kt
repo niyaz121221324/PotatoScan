@@ -86,8 +86,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun PotatoScanApp(
-    predict: (MultipartBody.Part, (PredictionResponse) -> Unit) -> Unit
-) {
+    predict: (MultipartBody.Part, (PredictionResponse) -> Unit) -> Unit) {
     var imageUri by remember { mutableStateOf<Uri?>(null) }
     var predictionResult by remember { mutableStateOf<String?>(null) }
     val context = LocalContext.current
