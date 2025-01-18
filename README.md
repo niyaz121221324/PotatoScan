@@ -18,4 +18,4 @@ PotatoScan — это приложение для анализа изображ�
 Клонируйте репозиторий на свой локальный компьютер:
 
 ```bash
-git clone https://github.com/yourusername/PotatoScan.git
+git clone https://github.com/niyaz121221324/PotatoScan.git
